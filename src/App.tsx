@@ -1,10 +1,12 @@
-import React from "react";
+import { GlobalStyle } from "./common/styles/global";
+import Grid from "./features/grid/Grid";
 
 function App() {
   return (
-    <div>
-      <h1>Hello world</h1>
-    </div>
+    <>
+      <GlobalStyle />
+      <Grid />
+    </>
   );
 }
 
