@@ -1,9 +1,11 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
+import cartSlice from "../features/cart/cartSlice";
 import gridSlice from "../features/grid/gridSlice";
 
 export const store = configureStore({
   reducer: {
     grid: gridSlice,
+    cart: cartSlice,
   },
 });
 

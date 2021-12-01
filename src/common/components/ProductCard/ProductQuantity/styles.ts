@@ -7,6 +7,7 @@ export const ProductQuantityContainer = styled.div`
   input {
     padding: 8px;
     color: var(--gray);
+    width: 24px;
   }
 
   input::-webkit-outer-spin-button,
