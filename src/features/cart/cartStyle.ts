@@ -4,6 +4,12 @@ export const Container = styled.div`
   width: 1044px;
   margin: 0 auto;
   padding: 24px 4rem;
+
+  .actionButtons {
+    button:first-child {
+      margin-right: 8px;
+    }
+  }
 `;
 
 export const TitleContainer = styled.div`

@@ -8,10 +8,12 @@ interface CartProduct extends Product {
 
 export interface CartState {
   products: CartProduct[];
+  totalPrice: number;
 }
 
 const initialState: CartState = {
   products: [],
+  totalPrice: 0,
 };
 
 export const cartSlice = createSlice({
@@ -28,6 +30,7 @@ export const cartSlice = createSlice({
       } else {
         state.products.push({ ...action.payload, quantity: 1 });
       }
+      state.totalPrice += action.payload.price;
     },
     removeProductFromCart: (state, action: PayloadAction<string>) => {
       const productIndex = state.products.findIndex(
@@ -39,12 +42,20 @@ export const cartSlice = createSlice({
       } else {
         state.products.splice(productIndex, 1);
       }
+      state.totalPrice -= state.products[productIndex].price;
+    },
+    clearCart: (state) => {
+      state.products = [];
+      state.totalPrice = 0;
     },
   },
 });
 
-export const { addProductToCart, removeProductFromCart } = cartSlice.actions;
+export const { addProductToCart, removeProductFromCart, clearCart } =
+  cartSlice.actions;
 
 export const getCartState = (state: RootState) => state.cart;
+export const getCartProducts = (state: RootState) => state.cart.products;
+export const getCartTotalPrice = (state: RootState) => state.cart.totalPrice;
 
 export default cartSlice.reducer;

@@ -5,7 +5,7 @@ import { fetchProducts as _fetchProducts } from "./gridAPI";
 export interface Product {
   id: string;
   name: string;
-  price: string;
+  price: number;
 }
 
 export interface GridState {
