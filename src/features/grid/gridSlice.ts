@@ -19,18 +19,17 @@ const initialState: GridState = {
 };
 
 export const fetchProducts = createAsyncThunk(
-  "products/fetchProducts",
+  "grid/fetchProducts",
   async () => {
     const response = await _fetchProducts();
     return response.data;
   }
 );
 
-export const productsSlice = createSlice({
-  name: "products",
+export const gridSlice = createSlice({
+  name: "grid",
   initialState,
   reducers: {},
-
   extraReducers: (builder) => {
     builder
       .addCase(fetchProducts.pending, (state) => {
@@ -45,4 +44,8 @@ export const productsSlice = createSlice({
 
 export const getGridState = (state: RootState) => state.grid;
 
-export default productsSlice.reducer;
+// export const GetGridStateHook = () => {
+//   return useAppSelector((state: RootState) => state.grid);
+// };
+
+export default gridSlice.reducer;
