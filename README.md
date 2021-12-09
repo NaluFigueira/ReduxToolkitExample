@@ -29,7 +29,7 @@
   <a href="#information_source-how-to-use">How To Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
-![App Preview](https://github.com/NaluFigueira/ReduxToolkitExample/blob/master/Preview.gif)
+![App Preview](https://github.com/NaluFigueira/ReduxToolkitExample/blob/main/Preview.gif)
 
 ## :bulb: Main Features~
 
