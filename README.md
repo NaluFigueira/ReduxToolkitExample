@@ -1,44 +1,76 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+<h1 align="center">
+    Shopping cart example
+</h1>
 
-## Available Scripts
+<h4 align="center">
+  Shopping cart example with Redux Toolkit
+</h4>
+<p align="center">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/NaluFigueira/ReduxToolkitExample.svg">
 
-In the project directory, you can run:
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/NaluFigueira/ReduxToolkitExample.svg">
 
-### `yarn start`
+  <a href="https://www.codacy.com/app/NaluFigueira/ReduxToolkitExample?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=NaluFigueira/ReduxToolkitExample&amp;utm_campaign=Badge_Grade">
+    <img alt="Codacy grade" src="https://img.shields.io/codacy/grade/1b577a07dda843aba09f4bc55d1af8fc.svg">
+  </a>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/NaluFigueira/ReduxToolkitExample.svg">
+  <a href="https://github.com/NaluFigueira/ReduxToolkitExample/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/NaluFigueira/ReduxToolkitExample.svg">
+  </a>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+  <a href="https://github.com/NaluFigueira/ReduxToolkitExample/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/NaluFigueira/ReduxToolkitExample.svg">
+  </a>
+</p>
 
-### `yarn test`
+<p align="center">
+  <a href="#rocket-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#information_source-how-to-use">How To Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+</p>
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![App Preview](https://github.com/NaluFigueira/ReduxToolkitExample/blob/master/Preview.gif)
 
-### `yarn build`
+## :bulb: Main Features~
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project includes mainly the following features:
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- Add/remove items from cart.
+- Edit quantity of cart items.
+- Clear cart.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## :rocket: Technologies
 
-### `yarn eject`
+This project was developed with the following technologies:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- [ReactJS](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [styled-components](https://styled-components.com/)
+- [Redux Toolkit](https://redux-toolkit.js.org/)
+- [VS Code][vc]
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## :information_source: How To Use
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js v14.17.5][nodejs] or higher + [Yarn v1.22.11][yarn] or higher installed on your computer. From your command line:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+# Clone this repository
+$ git clone https://github.com/NaluFigueira/ReduxToolkitExample
 
-## Learn More
+# Go into the repository
+$ cd ReduxToolkitExample
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Install dependencies
+$ yarn
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Run the app
+$ yarn start
+```
+
+---
+
+Made with ♥ by Ana Figueira :wave: [Get in touch!](https://www.linkedin.com/in/ana-lu%C3%ADsa-chaves-figueira-38792218a/)
+
+[yarn]: https://yarnpkg.com/
+[nodejs]: https://nodejs.org/
+[vc]: https://code.visualstudio.com/
