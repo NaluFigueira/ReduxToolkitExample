@@ -31,7 +31,7 @@
 
 ![App Preview](https://github.com/NaluFigueira/ReduxToolkitExample/blob/main/Preview.gif)
 
-## :bulb: Main Features~
+## :bulb: Main Features
 
 This project includes mainly the following features:
 
